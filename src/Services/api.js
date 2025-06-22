@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: '/api', // Menggunakan path proxy
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
 export const getIdeas = (params) => {
